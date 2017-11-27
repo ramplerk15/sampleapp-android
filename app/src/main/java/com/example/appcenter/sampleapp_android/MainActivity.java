@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
-
+import com.microsoft.appcenter.push.Push;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         AppCenter.start(getApplication(), "d998ed3b-8816-40ba-b071-1465713f1071",
                 Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "d998ed3b-8816-40ba-b071-1465713f1071",
+                Analytics.class, Push.class);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_root);
 
