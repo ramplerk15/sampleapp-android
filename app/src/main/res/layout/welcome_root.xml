@@ -3,21 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWelcomeBackground">
+    android:background="@android:color/background_light">
 
     <ImageView
         android:id="@+id/welcomeImageView"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
-        android:background="@color/colorWelcomeImageBackground"
+        android:background="@android:color/background_light"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mclogo" />
+        app:srcCompat="@drawable/logo_ma" />
 
     <TextView
         android:id="@+id/welcomeTextView"
@@ -33,7 +33,7 @@
         android:fadeScrollbars="false"
         android:text="@string/welcome_description"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="17sp" />
 
 </RelativeLayout>

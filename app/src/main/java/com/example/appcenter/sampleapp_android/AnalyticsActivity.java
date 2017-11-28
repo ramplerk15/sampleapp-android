@@ -61,6 +61,7 @@ public class AnalyticsActivity extends Fragment implements OnClickListener {
     public static class EventDialog extends DialogFragment {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             Analytics.trackEvent("Sample event");
+            Analytics.trackEvent("My Sample event");
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setMessage("Event sent").setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
